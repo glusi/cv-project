@@ -1,8 +1,9 @@
 numpy
 opencv-python
 matplotlib
-ipykernel
-tensorflow
 scikit-learn
-pandas
-scikit-plot
+keras
+requests
+h5py
+matplotlib
+tensorflow
