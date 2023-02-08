@@ -3,3 +3,7 @@ SynthText_train.h5
 __pycache__/
 /.idea/
 *.zip
+main_directory/
+augmented/
+.ipynb_checkpoints/
+*.csv
