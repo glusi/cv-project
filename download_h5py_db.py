@@ -27,7 +27,7 @@ def save_response_content(response, destination):
                     f.flush()
 
 
-def dowload_h5py_db():
+def download_h5py_db():
     DB_FILE = 'SynthText_train.h5'
     if not os.path.isfile(DB_FILE):
         ZIP_FILE = 'data.zip'
