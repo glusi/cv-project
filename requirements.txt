@@ -8,3 +8,4 @@ h5py
 matplotlib
 tensorflow
 tqdm
+split-folders
