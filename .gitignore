@@ -11,3 +11,6 @@ augmented/
 font_patch/
 VFR_real_test/
 test_set/
+*.h5
+*.png
+*.jpg
