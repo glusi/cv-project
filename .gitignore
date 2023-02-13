@@ -4,6 +4,12 @@ __pycache__/
 /.idea/
 *.zip
 main_directory/
+main_directory_splitted/
 augmented/
 .ipynb_checkpoints/
 *.csv
+check_test/
+font_patch/
+VFR_real_test/
+*.png
+*.jpg
