@@ -7,7 +7,7 @@
 
 ## General info
 This aim of this project is to classify fonts
-![Untitled-1](https://user-images.githubusercontent.com/62393460/219378725-afff414a-b2aa-40c4-a218-f2c775c673a7.png)
+<img align="left" width="100" height="100" src=![Untitled-1](https://user-images.githubusercontent.com/62393460/219378725-afff414a-b2aa-40c4-a218-f2c775c673a7.png)>
 
 	
 ## Technologies
