@@ -13,11 +13,18 @@ This is achieved using CNN, implemented with fine tuning on resnet50. It also us
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* h5py==3.7.0
+* keras==2.11.0
+* matplotlib==3.5.2
+* numpy==1.21.5
+* opencv_python==4.7.0.68
+* requests==2.28.1
+* scikit_learn==1.2.1
+* tensorflow==2.11.0
+* tensorflow_intel==2.11.0
+* tqdm==4.64.1
 	
-## Setup
+## Running
 To run this project, install it locally using npm:
 
 ```
@@ -25,3 +32,5 @@ $ cd ../lorem
 $ npm install
 $ npm start
 ```
+
+## Building the classifier
