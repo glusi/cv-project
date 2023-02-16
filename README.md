@@ -4,7 +4,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Running](#Running)
-* [Building the classifier](#Building the classifier)
+* [Building the classifier](#Building-the-classifier)
 
 ## General info
 This aim of this project is to classify fonts in images. The fonts used: Alex Brush', 'Open Sans', 'Sansation', 'Titillium Web','Ubuntu Mono'.
