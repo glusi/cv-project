@@ -51,7 +51,7 @@ To run this project, install it locally using pip:
 ```
 $ pip -r requirements_build.txt
 ```
-2. run the notebook font-recognition.ipynb
+2. run the notebook ```font-recognition.ipynb```
 
 
 ## Output
