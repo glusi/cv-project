@@ -5,9 +5,16 @@
 * [Technologies](#technologies)
 * [Running](#Running)
 * [Building the classifier](#Building-the-classifier)
-
+* [Output](#Output)
+* 
 ## General info
-This aim of this project is to classify fonts in images. The fonts used: Alex Brush', 'Open Sans', 'Sansation', 'Titillium Web','Ubuntu Mono'.
+This aim of this project is to classify fonts in images. 
+The available fonts are: 
+* Alex Brush
+* Open Sans
+* Sansation
+* *Titillium Web
+* *Ubuntu Mono
 
 
 This is achieved using CNN, implemented with fine tuning on resnet50. It also uses augmentation, preprocessing and postprocessing for better reslts.
@@ -40,3 +47,9 @@ To run this project, install it locally using pip:
 $ pip -r requirements_build.txt
 ```
 2. run the notebook font-recognition.ipynb
+
+
+## Output
+The project creates a file named test_labels.csv.
+
+This file contains all the predictions for each character for each image, in the given dataset.
