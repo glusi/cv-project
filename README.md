@@ -6,7 +6,10 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This aim of this project is to classify fonts
+![image](https://user-images.githubusercontent.com/62393460/219377861-ff1ffb34-c2f2-4cd7-a095-99225e45a17c.png)
+![image](https://user-images.githubusercontent.com/62393460/219377894-f8a6549d-39e8-41d9-93ef-ee8f70b26071.png)
+
 	
 ## Technologies
 Project is created with:
