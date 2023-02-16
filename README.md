@@ -34,7 +34,7 @@ The project is created with:
 
 ## Data
 The training data can be found in the following [link](https://drive.google.com/drive/folders/1jzHYpTwywUYA53nMGHVROSuVO14hEueq?usp=sharing). 
-The test set can be flound un the following [[link](](https://drive.google.com/drive/folders/1XJXgbHYs4L-SyihCRKq6-E74HKk77dM8?usp=sharing)https://drive.google.com/drive/folders/1hmPI7KaWcv-OLwJEQvMNjbOu9IhU_7CR?usp=sharing).
+The test set can be flound un the following [link](https://drive.google.com/drive/folders/1XJXgbHYs4L-SyihCRKq6-E74HKk77dM8?usp=sharing).
 	
 ## How to run
 To run this project, install it locally using pip:
