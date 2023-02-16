@@ -18,7 +18,7 @@ The available fonts are:
 * Ubuntu Mono
 
 
-This is achieved using CNN, implemented with fine tuning on Resnet50. It also uses augmentation, preprocessing and postprocessing for better reslts.
+This is achieved using CNN, implemented with fine tuning on Resnet50 with imagenet. It also uses augmentation, preprocessing and postprocessing for better reslts.
 	
 ## Technologies
 The project is created with:
