@@ -38,13 +38,12 @@ The test set can be flound un the following [link](https://drive.google.com/driv
 	
 ## How to run
 To run this project, install it locally using pip:
-1. Download the model from the link.[TODO]
-2. Install and run:
+1. Install:
 
 ```
-$ pip -r requirements_predict.txt
-$ ./create_res_report.py
+$ pip -r requirements.txt
 ```
+2. run the notebook ```predict_and_report.ipynb```
 
 ## Output
 The project creates a file named test_labels.csv.
@@ -55,6 +54,6 @@ This file contains all the predictions for each character for each image, in the
 To run this project, install it locally using pip:
 1. install dependencies:
 ```
-$ pip -r requirements_build.txt
+$ pip -r requirements.txt
 ```
 2. run the notebook ```font-recognition.ipynb```
