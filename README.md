@@ -39,6 +39,8 @@ The test set can be flound un the following [link](https://drive.google.com/driv
 	
 ## Running
 To run this project, install it locally using pip:
+1. Download the model from the link.[TODO]
+2. Install and run:
 
 ```
 $ pip -r requirements_predict.txt
