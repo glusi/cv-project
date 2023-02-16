@@ -14,8 +14,8 @@ The available fonts are:
 * Alex Brush
 * Open Sans
 * Sansation
-* *Titillium Web
-* *Ubuntu Mono
+* Titillium Web
+* Ubuntu Mono
 
 
 This is achieved using CNN, implemented with fine tuning on Resnet50. It also uses augmentation, preprocessing and postprocessing for better reslts.
