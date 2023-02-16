@@ -12,7 +12,7 @@ This aim of this project is to classify fonts in images. The fonts used: Alex Br
 This is achieved using CNN, implemented with fine tuning on resnet50. It also uses augmentation, preprocessing and postprocessing for better reslts.
 	
 ## Technologies
-Project is created with:
+The project is created with:
 * h5py==3.7.0
 * keras==2.11.0
 * matplotlib==3.5.2
@@ -25,12 +25,11 @@ Project is created with:
 * tqdm==4.64.1
 	
 ## Running
-To run this project, install it locally using npm:
+To run this project, install it locally using pip:
 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+$ pip -r requirements_predict.txt
+$ ./create_res_report.py
 ```
 
 ## Building the classifier
