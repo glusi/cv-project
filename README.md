@@ -34,7 +34,7 @@ The project is created with:
 
 ## Data
 The training data can be found in the following [link](https://drive.google.com/drive/folders/1jzHYpTwywUYA53nMGHVROSuVO14hEueq?usp=sharing). 
-The test set can be flound un the following [link](https://drive.google.com/drive/folders/1hmPI7KaWcv-OLwJEQvMNjbOu9IhU_7CR?usp=sharing).
+The test set can be flound un the following [[link](](https://drive.google.com/drive/folders/1XJXgbHYs4L-SyihCRKq6-E74HKk77dM8?usp=sharing)https://drive.google.com/drive/folders/1hmPI7KaWcv-OLwJEQvMNjbOu9IhU_7CR?usp=sharing).
 	
 ## How to run
 To run this project, install it locally using pip:
@@ -49,6 +49,8 @@ $ pip -r requirements.txt
 The project creates a file named test_labels.csv.
 
 This file contains all the predictions for each character for each image, in the given dataset.
+
+The model and output are available in the [link.](https://drive.google.com/drive/folders/1XJXgbHYs4L-SyihCRKq6-E74HKk77dM8?usp=sharing)
 
 ## Building the classifier
 To run this project, install it locally using pip:
