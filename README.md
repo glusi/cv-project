@@ -3,6 +3,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Data](#Data)
 * [Running](#Running)
 * [Building the classifier](#Building-the-classifier)
 * [Output](#Output)
@@ -17,7 +18,7 @@ The available fonts are:
 * *Ubuntu Mono
 
 
-This is achieved using CNN, implemented with fine tuning on resnet50. It also uses augmentation, preprocessing and postprocessing for better reslts.
+This is achieved using CNN, implemented with fine tuning on Resnet50. It also uses augmentation, preprocessing and postprocessing for better reslts.
 	
 ## Technologies
 The project is created with:
@@ -31,6 +32,10 @@ The project is created with:
 * tensorflow==2.11.0
 * tensorflow_intel==2.11.0
 * tqdm==4.64.1
+
+## Data
+The training data can be found in the following [link](https://drive.google.com/drive/folders/1jzHYpTwywUYA53nMGHVROSuVO14hEueq?usp=sharing). 
+The test set can be flound un the following [link](https://drive.google.com/drive/folders/1hmPI7KaWcv-OLwJEQvMNjbOu9IhU_7CR?usp=sharing).
 	
 ## Running
 To run this project, install it locally using pip:
