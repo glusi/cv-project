@@ -45,6 +45,11 @@ $ pip -r requirements_predict.txt
 $ ./create_res_report.py
 ```
 
+## Output
+The project creates a file named test_labels.csv.
+
+This file contains all the predictions for each character for each image, in the given dataset.
+
 ## Building the classifier
 To run this project, install it locally using pip:
 1. install dependencies:
@@ -52,9 +57,3 @@ To run this project, install it locally using pip:
 $ pip -r requirements_build.txt
 ```
 2. run the notebook ```font-recognition.ipynb```
-
-
-## Output
-The project creates a file named test_labels.csv.
-
-This file contains all the predictions for each character for each image, in the given dataset.
