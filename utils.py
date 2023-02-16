@@ -6,20 +6,8 @@ from tqdm import tqdm
 from pathlib import Path
 from tensorflow import float32
 from sklearn.metrics import classification_report
-import tensorflow as tf
-SIZE = 224
 
-def font_to_num(font):
-    if font == b'Alex Brush':
-        return 0
-    elif font == b'Open Sans':
-        return 1
-    elif font == b'Sansation':
-        return 2
-    elif font == b'Titillium Web':
-        return 3
-    else:
-        return 4
+SIZE = 224
 
 def create_dirs(main_dir):
     Path(main_dir).mkdir(parents=True, exist_ok=True)
@@ -29,24 +17,39 @@ def create_dirs(main_dir):
     Path(main_dir+'/Open Sans').mkdir(parents=True, exist_ok=True)
     Path(main_dir+'/Ubuntu Mono').mkdir(parents=True, exist_ok=True)
 
-def get_image_data(db, im, has_labels=True):
+def crop_and_save(img, BBs, indx, size, curr_font, im, num, append_not_save=False, folder='main_directory/'):
+    cropped = prepare_img(img, BBs, indx, size)
+    if not append_not_save:
+        path = folder+curr_font.decode('UTF-8')+'/'+im+'_'+str(num)+'.png' 
+        tf.keras.utils.save_img(path,cropped)
+    return cropped
+
+def is_not_dot(inp):
+    # res= ((inp >= ord('a') and inp <= ord('z')) or (inp >= ord('A') and inp <= ord('Z'))) or (inp>=ord('0') and inp<=ord('9'))
+    res= (inp != ord('.') and inp != ord(':'))
+    # print(chr(inp)+"="+str(res))
+    return res
+
+def get_image_data(db, im, no_labels=False):
     img  = db['data'][im][:]
-    txts = db['data'][im].attrs['txt']
-    if has_labels:
-        fonts = db['data'][im].attrs['font']  
-    else: 
+    if not no_labels:
+        fonts = db['data'][im].attrs['font']
+    else:
         fonts = None
+    txts = db['data'][im].attrs['txt']
     charBBs = db['data'][im].attrs['charBB']
     wordBBs = db['data'][im].attrs['wordBB']
     return img, fonts, txts, charBBs, wordBBs
 
-def is_not_dot(inp):
-    res= (inp != ord('.') and inp != ord(':'))
-    return res
 
-def show_results(test_y, prediction_arr):    
-    labels=['Alex Brush','Open Sans','Sansation','Titillium Web','Ubuntu Mono']
-    print(classification_report(test_y, prediction_arr, target_names=labels))
+def create_dirs(main_dir):
+    Path(main_dir).mkdir(parents=True, exist_ok=True)
+    Path(main_dir+'/Alex Brush').mkdir(parents=True, exist_ok=True)
+    Path(main_dir+'/Titillium Web').mkdir(parents=True, exist_ok=True)
+    Path(main_dir+'/Sansation').mkdir(parents=True, exist_ok=True)
+    Path(main_dir+'/Open Sans').mkdir(parents=True, exist_ok=True)
+    Path(main_dir+'/Ubuntu Mono').mkdir(parents=True, exist_ok=True)
+
 
 def prepare_img(img, bbs, index, size = SIZE):
     x1 = int(bbs[0,0,index])
@@ -64,13 +67,35 @@ def prepare_img(img, bbs, index, size = SIZE):
     bot_right_y = max(0, max([y1,y2,y3,y4]))
 
     cropped = img[top_left_y:bot_right_y+1, top_left_x:bot_right_x+1]
-    cropped = tf.image.resize(cropped, (size, size), method=tf.image.ResizeMethod.NEAREST_NEIGHBOR)
-    cropped = tf.image.convert_image_dtype(cropped, tf.float32)
+    cropped = resize(cropped, (size, size), method=ResizeMethod.NEAREST_NEIGHBOR)
+    cropped = convert_image_dtype(cropped, float32)
     return cropped
 
-def crop_and_save(img, BBs, indx, size, curr_font, im, num, append_not_save=False, folder='main_directory/'):
-    cropped = prepare_img(img, BBs, indx, size)
-    if not append_not_save:
-        path = folder+curr_font.decode('UTF-8')+'/'+im+'_'+str(num)+'.png' 
-        tf.keras.utils.save_img(path,cropped)
-    return cropped
+def num_to_font(font):
+    if font == 0:
+        return b'Alex Brush'
+    elif font == 1:
+        return b'Open Sans'
+    elif font == 2:
+        return b'Sansation'
+    elif font == 3:
+        return b'Titillium Web'
+    else:
+        return b'Ubuntu Mono'
+
+def font_to_num(font):
+    if font == b'Alex Brush':
+        return 0
+    elif font == b'Open Sans':
+        return 1
+    elif font == b'Sansation':
+        return 2
+    elif font == b'Titillium Web':
+        return 3
+    else:
+        return 4
+
+
+def show_results(test_y, prediction_arr):    
+    labels=['Alex Brush','Open Sans','Sansation','Titillium Web','Ubuntu Mono']
+    print(classification_report(test_y, prediction_arr, target_names=labels))
