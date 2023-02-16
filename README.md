@@ -34,3 +34,9 @@ $ ./create_res_report.py
 ```
 
 ## Building the classifier
+To run this project, install it locally using pip:
+1. install dependencies:
+```
+$ pip -r requirements_build.txt
+```
+2. run the notebook font-recognition.ipynb
