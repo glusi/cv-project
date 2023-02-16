@@ -6,9 +6,8 @@
 * [Setup](#setup)
 
 ## General info
-This aim of this project is to classify fonts
-<img align="left" src=![Untitled-1](https://user-images.githubusercontent.com/62393460/219378725-afff414a-b2aa-40c4-a218-f2c775c673a7.png)>
-
+This aim of this project is to classify fonts in images. The fonts used: Alex Brush', 'Open Sans', 'Sansation', 'Titillium Web','Ubuntu Mono'.
+This is achieved using CNN, implemented with fine tuning on resnet50. It also uses augmentation, preprocessing and postprocessing for better reslts.
 	
 ## Technologies
 Project is created with:
