@@ -2,14 +2,14 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
+* [Dependencies](#Dependencies)
 * [Data](#Data)
-* [Running](#Running)
+* [How to run](#How-to-run)
 * [Building the classifier](#Building-the-classifier)
 * [Output](#Output)
 * 
 ## General info
-This aim of this project is to classify fonts in images. 
+The aim of this project is to classify fonts in images. 
 The available fonts are: 
 * Alex Brush
 * Open Sans
@@ -20,7 +20,7 @@ The available fonts are:
 
 This is achieved using CNN, implemented with fine tuning on Resnet50 with imagenet. It also uses augmentation, preprocessing and postprocessing for better reslts.
 	
-## Technologies
+## Dependencies
 The project is created with:
 * h5py==3.7.0
 * keras==2.11.0
@@ -30,14 +30,13 @@ The project is created with:
 * requests==2.28.1
 * scikit_learn==1.2.1
 * tensorflow==2.11.0
-* tensorflow_intel==2.11.0
 * tqdm==4.64.1
 
 ## Data
 The training data can be found in the following [link](https://drive.google.com/drive/folders/1jzHYpTwywUYA53nMGHVROSuVO14hEueq?usp=sharing). 
 The test set can be flound un the following [link](https://drive.google.com/drive/folders/1hmPI7KaWcv-OLwJEQvMNjbOu9IhU_7CR?usp=sharing).
 	
-## Running
+## How to run
 To run this project, install it locally using pip:
 1. Download the model from the link.[TODO]
 2. Install and run:
